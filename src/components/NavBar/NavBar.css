@@ -1,0 +1,8 @@
+a.nav_link:hover {
+   
+    cursor: pointer;
+    color: #57be8e!important;
+  }
+  a.nav_link{
+    font-weight: bold!important;
+  }
