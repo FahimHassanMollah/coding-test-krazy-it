@@ -24,7 +24,7 @@ const Protfolio = () => {
     };
     return (
 
-        <Container className="py-5 py-5">
+        <Container className="" id="protfolio" style={{ paddingTop: "100px",paddingBottom:"80px" }}>
             <div className="text-center pb-5">
                 <h2>Our Major Clients</h2>
                 <p className="text-muted pt-2">Some of our largest backers, who continue to work with us and are extremely <br />

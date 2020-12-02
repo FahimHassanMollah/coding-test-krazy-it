@@ -8,7 +8,7 @@ import four from '../../images/Group 72@2x.png';
 const Service = () => {
 
     return (
-        <div className="pt-5 text-white" style={{ backgroundColor: "#55404e" }}>
+        <div id="service" className="text-white" style={{ backgroundColor: "#55404e",paddingTop:"99px" }}>
             <div className="text-center">
                 <h1 className="pb-0 mb-0" style={{ fontFamily: "YesevaOne-Regular", fontWeight: "600" }}>What We Offer</h1>
                 <div>

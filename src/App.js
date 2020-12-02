@@ -7,6 +7,13 @@ import {
   Link
 } from "react-router-dom";
 import Home from './components/Home/Home';
+import Service from './components/Service/Service';
+import About from './components/About/About';
+import Protfolio from './components/Protfolio/Protfolio';
+import Pricing from './components/Pricing/Pricing';
+import MultipleImagePreview from './components/MultipleImagePreview/MultipleImagePreview';
+import TShirt from './components/TShirt/TShirt';
+import Contact from './components/Contact/Contact';
 function App() {
   return (
     <div className="App">
@@ -18,13 +25,31 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          {/* <Route path="/old-match">
-            <Redirect to="/will-match" />
+          <Route exact path="/home">
+            <Home />
           </Route>
-          <Route path="/will-match">
-            <WillMatch />
+          <Route path="/service">
+            <Service></Service>
           </Route>
-          <Route path="*">
+          <Route path="/about">
+           <About></About>
+          </Route>
+          <Route path="/protfolio">
+           <Protfolio></Protfolio>
+          </Route>
+          <Route path="/pricing">
+           <Pricing></Pricing>
+          </Route>
+          <Route path="/imagePreview">
+            <MultipleImagePreview></MultipleImagePreview>
+          </Route>
+          <Route path="/tshirt">
+            <TShirt></TShirt>
+          </Route>
+          <Route path="/ordernow">
+            <Contact></Contact>
+          </Route>
+          {/* <Route path="*">
             <NoMatch />
           </Route> */}
         </Switch>

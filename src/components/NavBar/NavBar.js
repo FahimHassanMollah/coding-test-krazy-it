@@ -1,24 +1,32 @@
 import React from 'react';
+
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import './NavBar.css'
 import brand from '../../images/logo.png';
+// import {
+//     BrowserRouter as Router,
+//     Switch,
+//     Route,
+//     Link
+//   } from "react-router-dom";
+  import { HashLink as Link } from 'react-router-hash-link';
 const NavBar = () => {
     return (
         <div className="pt-2">
-            <Navbar bg="" expand="lg">
+            <Navbar fixed="top" bg="white" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">
-                        <img className="" style={{height:"60px"}}  src={brand} alt=""/>
+                    <Navbar.Brand href="/home">
+                        <img className="" style={{height:"50px"}}  src={brand} alt=""/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link className="pr-4 nav_link" href="#home">Home</Nav.Link>
-                            <Nav.Link className="pr-4 nav_link" href="#link">About</Nav.Link>
-                            <Nav.Link className="pr-4 nav_link" href="#link">Services</Nav.Link>
-                            <Nav.Link className="pr-4 nav_link" href="#link">Protfolio</Nav.Link>
-                            <Nav.Link className="pr-4 nav_link" href="#link">Pricing</Nav.Link>
-                            <Nav.Link className="pr-4 nav_link" href="#link">Order Now</Nav.Link>
+                            <Link className="pr-4 nav_link" smooth to="#home">Home</Link>
+                            <Link className="pr-4 nav_link" smooth to="#about">About</Link>
+                            <Link className="pr-4 nav_link" smooth to="#service">Services</Link>
+                            <Link className="pr-4 nav_link" smooth to="#protfolio">Protfolio</Link>
+                            <Link className="pr-4 nav_link" smooth to="#pricing">Pricing</Link>
+                            <Link className="pr-4 nav_link" smooth to="#ordernow">Order Now</Link>
                             
 
                         </Nav>

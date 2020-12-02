@@ -2,7 +2,19 @@ a.nav_link:hover {
    
     cursor: pointer;
     color: #57be8e!important;
+    text-decoration: none!important;
+  }
+  a{
+    text-decoration: none!important;
+    color: #555!important;
   }
   a.nav_link{
+    text-decoration: none!important;
     font-weight: bold!important;
   }
+  /* .navbar{
+    position:fixed;
+    width:100%;
+    z-index: 1000000;
+   
+} */
