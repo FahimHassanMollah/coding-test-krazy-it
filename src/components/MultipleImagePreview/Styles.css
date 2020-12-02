@@ -4,12 +4,25 @@
     background-color: #d69534;
     height: 100vh;
 }
-/* .image-item {
-    display: flex;
-    margin: 10px 0;
+.drag-btn{
+  color: white!important;
+  border-radius: 20px 0px 20px 0px;
+  background: hsl(188, 87%, 45%);
+  background-image: radial-gradient( at 0 140%, #3bd6cd 30%, #0ab2e6 67%, #0ab2e6 69%);
+   /* width: 200px;
+   height: 50px; */
+  
+   /* border-radius: 10px; */
+   display: inline-block!important;
+   padding: 8px 20px 8px 20px!important;
+   text-align: center;
+   border: none;
+}
+.drag-btn:active, 
+ .drag-btn:focus 
+ {
+     border:0 px solid white!important; /* here configure as your needs */
+     color:white!important;
+     border-color:wheat!important;
+     outline: none;
   }
-  .image-item__btn-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-  } */

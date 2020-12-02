@@ -60,8 +60,9 @@ const TShirt = () => {
                         <div className="image-container" >
                             <img className="" style={{width:"400px"}} src={tshirt} alt="" />
                            {
-                               text.length>0 && <Draggable>
-                               <div className={position+" p-2"} style={{fontSize:"25px",fontWeight:"bold",color:"red",cursor:"pointer",border:"2px solid black"}}>{text}</div>
+                               text.length>0 && 
+                               <Draggable>
+                               <div className={position} style={{fontSize:"25px",fontWeight:"bold",color:"red",cursor:"pointer",border:"2px solid black"}}>{text}</div>
                                </Draggable>
                            }
                          

@@ -3,6 +3,7 @@ import NavBar from '../NavBar/NavBar';
 import ImageUploading from 'react-images-uploading';
 import { Button, Card, CardColumns, Col, Container, Row } from 'react-bootstrap';
 import './MultipleImagePreview';
+import './Styles.css'
 const MultipleImagePreview = () => {
     const [images, setImages] = useState([]);
     const maxNumber = 69;
@@ -40,17 +41,17 @@ const MultipleImagePreview = () => {
                                 <Container>
                                     <Row className="d-flex justify-content-center">
                                         <Col md={6}>
-                                            <Button
-                                                className=""
-                                                style={isDragging ? { color: 'red' } : undefined}
+                                            <button
+                                                className="drag-btn mb-3"
+                                                // style={isDragging ? { color: 'red' } : undefined}
                                                 onClick={onImageUpload}
                                                 {...dragProps}
                                             >
                                                 Click or Drop here Images
-                                             </Button>
+                                             </button>
                                       &nbsp;
                                             {
-                                                images.length > 0 && <Button onClick={onImageRemoveAll}>Remove all images</Button>
+                                                images.length > 0 && <button className="drag-btn mb-3" onClick={onImageRemoveAll}>Remove all images</button>
                                             }
                                         </Col>
                                     </Row>
